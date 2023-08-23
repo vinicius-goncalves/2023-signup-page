@@ -46,6 +46,7 @@ main form h1.title {
 }
 
 form button[type="submit"] {
+    font-size: 1.1rem;
     padding: 15px;
     border: none;
     background-color: var(--color0);
@@ -57,7 +58,7 @@ form button[type="submit"] {
 
 form section[data-section="already-have-account"] {
     padding: 10px 0;
-    text-align: center;
+    text-align: left;
 }
 
 @media screen and (max-width: 400px) {

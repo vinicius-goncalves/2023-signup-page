@@ -1,5 +1,23 @@
+section {
+    min-width: calc(100vw / 2.5);
+}
+
+label {
+    display: flex;
+    position: relative;
+}
+
+img[data-validation="invalid"] {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
 .generic-input {
-    margin: 5px 0;
+    font-size: 1rem;
+    margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid var(--color3);
@@ -9,9 +27,30 @@
     outline: none;
 }
 
+small {
+    display: inline-block;
+    color: #ff3535;
+    padding: 10px;
+    display: none;
+}
+
 .link {
-    color: var(--color2);
+    color: var(--color1);
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
 }
+
+/*
+Animations
+*/
+
+/* @keyframes scale {
+    from {
+        transform: translateY(-50%) scale(0);
+    }
+
+    to {
+        transform: translateY(-50%) scale(1);
+    }
+} */

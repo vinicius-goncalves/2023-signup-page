@@ -17,36 +17,26 @@
                 <img class="index-image" src="images/small.jpg">
             </picture>
             <form>
-                <h1 class="title">Homepage</h1>
+                <h1 class="title">Sign up</h1>
                 <section data-section="inputs">
-                    <label>
-                        <input
-                            class="generic-input"
-                            type="text"
-                            placeholder="Username"
-                            autocomplete="username">
+                    <label data-label="username">
+                        <input data-input="username" class="generic-input" type="text" placeholder="Username" autocomplete="username">
                     </label>
-                    <label>
-                        <input
-                            class="generic-input"
-                            type="email"
-                            placeholder="Email"
-                            autocomplete="email">
+                    <label data-label="email">
+                        <input data-input="email" class="generic-input" type="email" placeholder="Email" autocomplete="email">
                     </label>
-                    <label>
-                        <input
-                            class="generic-input"
-                            type="password"
-                            placeholder="Password" autocomplete="current-password">
+                    <label data-label="password">
+                        <input data-input="password" class="generic-input" type="password" placeholder="Password" autocomplete="current-password">
                     </label>
                 </section>
                 <button data-button="sign-up" type="submit">
-                    <span>Sign up</span>
+                    <span>Join now</span>
                 </button>
                 <section data-section="already-have-account">
-                    <span>Do you already have an account? <a class="link" href="#">Log in.</a></span>
+                    <span">Do you already have an account? <a class="link" href="#">Log in.</a></span>
                 </section>
             </form>
         </main>
+        <script type="module" src="js/app.js"></script>
     </body>
 </html>
