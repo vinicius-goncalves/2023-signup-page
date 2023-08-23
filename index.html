@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Singup</title>
+        <title>Welcome | Sign up</title>
         <meta charset="UTF-8">
         <meta content="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="robots" content="noindex, nofollow">
         <meta content="color-scheme" content="light">
-        <link rel="stylesheet" href="style/main-style.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet alternative" href="style/elements.css">
     </head>
     <body>
         <main>
+            <picture>
+                <source srcset="images/high.jpg" media="(min-width: 1200px)">
+                <source srcset="images/medium.jpg" media="(min-width: 600px)">
+                <img class="index-image" src="images/small.jpg">
+            </picture>
             <form>
-                <label>
-                    <input class="generic-input" type="text" placeholder="Username">
-                </label>
-                <label>
-                    <input class="generic-input" type="email" placeholder="Email">
-                </label>
-                <label>
-                    <input class="generic-input" type="password" placeholder="Password">
-                </label>
-                <button type="submit">
-                    <span>Sing up</span>
+                <h1 class="title">Homepage</h1>
+                <section data-section="inputs">
+                    <label>
+                        <input
+                            class="generic-input"
+                            type="text"
+                            placeholder="Username"
+                            autocomplete="Username">
+                    </label>
+                    <label>
+                        <input
+                            class="generic-input"
+                            type="email"
+                            placeholder="Email"
+                            autocomplete="email">
+                    </label>
+                    <label>
+                        <input
+                            class="generic-input"
+                            type="password"
+                            placeholder="Password" autocomplete="current-password">
+                    </label>
+                </section>
+                <button data-button="sign-up" type="submit">
+                    <span>Sign up</span>
                 </button>
+                <section data-section="already-have-account">
+                    <span>Do you already have an account? <a class="link" href="#">Log in.</a></span>
+                </section>
             </form>
         </main>
     </body>
